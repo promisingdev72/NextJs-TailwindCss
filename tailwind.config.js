@@ -1,5 +1,7 @@
 module.exports = {
-  content: [],
+  content: [
+    "./pages/index.js",
+  ],
   theme: {
     extend: {},
   },
