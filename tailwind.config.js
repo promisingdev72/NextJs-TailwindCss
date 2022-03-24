@@ -3,7 +3,11 @@ module.exports = {
     "./pages/index.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      container:{
+        center:true,
+      }
+    },
   },
   plugins: [],
 }
