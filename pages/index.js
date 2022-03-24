@@ -13,12 +13,13 @@ export default function HomePage() {
                 <title>Home Page</title>
             </Head>
             <Script
-              src="https://connect.facebook.net/en_US/sdk.js"
+              src=""
               strategy="lazyOnload"
               onLoad={() =>
                 console.log(`script loaded correctly, window.FB has been populated`)
               }
             />
+            <div>This is homepage</div>
           </Layout>
             
 
