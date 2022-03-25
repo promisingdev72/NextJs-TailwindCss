@@ -5,7 +5,7 @@
 @layer base {
     @font-face {
       font-family: BarlowRegular;
-      src: url(/fonts/Barlow/Barlow-Regular.ttf) format('truetype');
+      src:  (/fonts/Barlow/Barlow-Regular.ttf) format('truetype');
     }
     @font-face {
         font-family: BarlowBold;
@@ -17,7 +17,7 @@
     }
     @font-face {
         font-family: BarlowCondensedRegular;
-        src: url(/fonts/Barlow/BarlowCondensed-Regular.ttf) format('truetype');
+        src: url(/fonts/BarlowCondensed/BarlowCondensed-Regular.ttf) format('truetype');
     }
   }
 
@@ -33,12 +33,33 @@
 .primary-back{
     background-color: #4C651A;
 }
+.pro-color{
+    color: #c7411b;
+}
+.date-color{
+    color: #2f697f;
+}
 .input-back{
     background-color: #5b722d;
+}
+.primary-color{
+    color: #4b6519;
+}
+.second-color{
+    color:#2f697f;
+}
+.top-btn{
+    background-color: #c8411b;
 }
 .font-BarlowRegular{
     font-family: BarlowRegular;
 }
 .font-BarlowBold{
     font-family: BarlowBold;
+}
+.font-BarlowCondensedRegular{
+    font-family: BarlowCondensedRegular;
+}
+.h-910{
+    height: 910px;
 }

@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      container:{
-        center:true,
+      backgroundImage:{
+        'back-image':'url(/images/background.png)'
       }
     },
   },
