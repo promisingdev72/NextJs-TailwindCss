@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: BarlowRegular;
+      src: url(/fonts/Barlow/Barlow-Regular.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: BarlowBold;
+        src: url(/fonts/Barlow/Barlow-Bold.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: BarlowMedium;
+        src: url(/fonts/Barlow/Barlow-Medium.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: BarlowCondensedRegular;
+        src: url(/fonts/Barlow/BarlowCondensed-Regular.ttf) format('truetype');
+    }
+  }
+
+.primary-color{
+    color: #4C651A;
+}
+.logo-text-color{
+    color: #514520;
+}
+.nav-text-color{
+    color: #518095;
+}
+.primary-back{
+    background-color: #4C651A;
+}
+.input-back{
+    background-color: #5b722d;
+}
+.font-BarlowRegular{
+    font-family: BarlowRegular;
+}
+.font-BarlowBold{
+    font-family: BarlowBold;
+}
