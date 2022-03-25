@@ -5,6 +5,7 @@ import { IoMail } from "react-icons/io5";
 import { IoNotifications } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { IoPersonCircle } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 import Flag from '../../public/images/uk-flag.png'
 import Image from 'next/image'
 import Logo from '../../public/images/logo.png'
@@ -14,7 +15,8 @@ import Logo from '../../public/images/logo.png'
 export default function Header() {
     return (
         <>
-            <div className='flex primary-back'>
+            {/* xl,lg,sm */}
+            <div className='hidden primary-back sm:flex'>
                 <div className = 'pl-0 pr-44 pt-6 pb-2.5 ml-auto'>
                     <ul className="flex">
                         <li className="mr-12">
@@ -40,45 +42,49 @@ export default function Header() {
                         <li className="mr-6">
                             <IoPersonCircle className="text-white text-3xl mr-6"/>
                         </li>
-                        <li>
+                        <li className="min-w-fit">
                             <Image src={Flag}/>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div className="flex pl-24 pr-44 pb-8">
-                <div>
+            <div className="flex pl-0 pr-0 pb-2 sm:pl-24 sm:pr-44 sm:pb-8">
+                <div className="hidden sm:block sm:min-w-fit">
                     <Image src={Logo}/>
                 </div>
-                <div className="pt-9 pl-16">
-                    <div className="font-BarlowRegular text-8xl logo-text-color">
+                <div className="flex flex-1 justify-between sm:block pt-2 pl-4 pr-2 sm:pt-9 sm:pl-16">
+                    <div className="font-BarlowRegular text-4xl sm:text-8xl logo-text-color">
                         KAMONA
                     </div>
-                    <ul className="pt-12 flex">
-                        <li className="mr-32 font-BarlowBold nav-text-color text-xl">
+                    <ul className="hidden sm:pt-12 pt-2 sm:flex">
+                        <li className="mr-4 sm:mr-32 font-BarlowBold nav-text-color text-lg sm:text-xl">
                             Qui sommes-nous ?
                         </li>
-                        <li className="mr-32 font-BarlowBold nav-text-color text-xl">
+                        <li className="mr-4 xl:mr-32 font-BarlowBold nav-text-color text-lg xl:text-xl">
                             Actualités
                         </li>
-                        <li className="mr-16 font-BarlowBold nav-text-color text-xl">
+                        <li className="mr-2 xl:mr-16 font-BarlowBold nav-text-color text-lg xl:text-xl">
                             Notre histoire
                         </li>
-                        <li className="mr-14 font-BarlowBold nav-text-color text-xl">
+                        <li className="mr-2 xl:mr-14 font-BarlowBold nav-text-color text-lg xl:text-xl">
                             Les sections
                         </li>
-                        <li className="mr-14 font-BarlowBold nav-text-color text-xl">
+                        <li className="mr-2 xl:mr-14 font-BarlowBold nav-text-color text-lg xl:text-xl">
                             Adhérer
                         </li>
-                        <li className="mr-16 font-BarlowBold nav-text-color text-xl">
+                        <li className="mr-2 xl:mr-16 font-BarlowBold nav-text-color text-lg xl:text-xl">
                             Contact
                         </li>
-                        <li className="font-BarlowBold nav-text-color text-xl">
+                        <li className="font-BarlowBold nav-text-color text-lg xl:text-xl">
                             Faire un don
                         </li>
                     </ul>
+                    <div className="flex text-4xl sm:hidden">
+                        <IoMenu className="ml-auto primary-color"/>
+                    </div>
                 </div>
             </div>
+            
         </>
         
     )
