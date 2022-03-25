@@ -142,7 +142,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center items-center relative'>
+                <div className='flex justify-center items-center relative leading-0'>
                     <div>
                         <Image src={Forest}/>
                     </div>

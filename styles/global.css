@@ -48,6 +48,9 @@
 .second-color{
     color:#2f697f;
 }
+.third-color{
+    background-color: #d3da3d;
+}
 .top-btn{
     background-color: #c8411b;
 }
@@ -62,4 +65,7 @@
 }
 .h-910{
     height: 910px;
+}
+.leading-0{
+    line-height: 0;
 }
