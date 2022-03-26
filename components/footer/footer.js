@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Footer(){
     return(
         <>
-          <div className="px-2 py-2 lg:px-60 lg:py-16 primary-back">
+          <div className="px-12 py-2 xl:px-60 lg:py-16 primary-back">
             <div className="lg:px-0 px-3 border-b-2 border-white block lg:flex lg:py-4 py-0 w-full justify-between">
                 <div className="text-white text-lg font-BarlowCondensedRegular">
                   <div>Qui-sommes-nous ?</div>

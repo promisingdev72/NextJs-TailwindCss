@@ -15,7 +15,7 @@ import Logo from '../../public/images/logo.png'
 export default function Header() {
     return (
         <>
-            <div className='hidden primary-back sm:flex'>
+            <div className='hidden primary-back lg:flex'>
                 <div className = 'pl-0 pr-44 pt-6 pb-2.5 ml-auto'>
                     <ul className="flex">
                         <li className="mr-4 lg:mr-12 flex items-center">
@@ -47,38 +47,38 @@ export default function Header() {
                     </ul>
                 </div>
             </div>
-            <div className="flex pl-0 pr-0 pb-2 sm:pl-0 lg:pl-44 sm:pr-2 lg:pr-24 lg:pb-8 sm:pb-4">
-                <div className="min-w-fit hidden lg:flex">
+            <div className="flex pl-0 pr-0 pb-2 xl:pl-28 lg:pr-24 lg:pb-8">
+                <div className="min-w-fit hidden lg:block">
                     <Image src={Logo}/>
                 </div>
-                <div className="flex flex-1 justify-between sm:block pt-2 pl-4 pr-2 sm:pt-3 lg:pt-9 lg:pl-16 sm:pl-4">
-                    <div className="font-BarlowRegular text-2xl lg:text-8xl sm:text-4xl logo-text-color">
+                <div className="flex flex-1 justify-between lg:block pt-2 pl-4 pr-2 lg-3 lg:pt-9 xl:pl-16 lg-4">
+                    <div className="font-BarlowRegular text-2xl lg:text-8xl logo-text-color">
                         KAMONA
                     </div>
-                    <ul className="hidden sm:pt-4 lg:pt-12 pt-2 sm:flex">
-                        <li className="mr-0 sm:mr-4 sm:12 lg:mr-32 font-BarlowBold nav-text-color text-xm lg:text-xl">
+                    <ul className="hidden lg:pt-12 pt-2 lg:flex">
+                        <li className="mr-0 xl:mr-12 font-BarlowBold nav-text-color text-xm lg:text-xl">
                             Qui sommes-nous ?
                         </li>
-                        <li className="mr-4 lg:mr-32 font-BarlowBold nav-text-color text-xm lg:text-xl">
+                        <li className="mr-2 xl:mr-32 font-BarlowBold nav-text-color text-xm lg:text-xl">
                             Actualités
                         </li>
-                        <li className="mr-2 lg:mr-16 font-BarlowBold nav-text-color text-xm lg:text-xl">
+                        <li className="mr-2 xl:mr-16 font-BarlowBold nav-text-color text-xm lg:text-xl">
                             Notre histoire
                         </li>
-                        <li className="mr-2 lg:mr-14 font-BarlowBold nav-text-color text-xm lg:text-xl">
+                        <li className="mr-2 xl:mr-14 font-BarlowBold nav-text-color text-xm lg:text-xl">
                             Les sections
                         </li>
-                        <li className="mr-2 lg:mr-14 font-BarlowBold nav-text-color text-xm lg:text-xl">
+                        <li className="mr-2 xl:mr-14 font-BarlowBold nav-text-color text-xm lg:text-xl">
                             Adhérer
                         </li>
-                        <li className="mr-2 lg:mr-16 font-BarlowBold nav-text-color text-xm lg:text-xl">
+                        <li className="mr-2 xl:mr-16 font-BarlowBold nav-text-color text-xm lg:text-xl">
                             Contact
                         </li>
                         <li className="font-BarlowBold nav-text-color text-xm lg:text-xl">
                             Faire un don
                         </li>
                     </ul>
-                    <div className="flex text-4xl sm:hidden">
+                    <div className="flex text-4xl lg:hidden">
                         <IoMenu className="ml-auto primary-color"/>
                     </div>
                 </div>

@@ -69,3 +69,11 @@
 .leading-0{
     line-height: 0;
 }
+.forest{
+    background-image: url(../public/images/forest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}

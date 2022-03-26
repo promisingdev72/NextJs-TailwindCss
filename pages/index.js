@@ -14,7 +14,6 @@ import Fields from '../public/images/fields.png'
 import Map from '../public/images/map.png'
 import Medal from '../public/images/medal.png'
 import Dangi from '../public/images/dangi.png'
-import Forest from '../public/images/forest.png'
 import Phone from '../public/images/phone.png'
 import Message from '../public/images/message.png'
 import Location from '../public/images/location.png'
@@ -28,8 +27,8 @@ export default function HomePage() {
                 </Head>
                 <Header/>
                 <div className="block lg:flex">
-                    <div>
-                        <Image src={LeftBack}/>
+                    <div className='flex w-full'>
+                        <Image src={LeftBack} className="w-full"/>
                     </div>
                     <div className="relative">
                         <Image src={RightBack}/>
@@ -45,11 +44,11 @@ export default function HomePage() {
                 </div>
                 <div className="px-3 lg:px-32">
                     <div className="block py-2 lg:grid lg:gap-4 lg:grid-cols-2 lg:py-14 lg:border-b-4 border-b-2 border-gray-400">
-                        <div className="flex lg:relative static w-full">
+                        <div className="flex lg:relative static w-full items-center">
                             <div className='hidden lg:flex z-10'>
                                 <Image src={LeftQuote}/>
                             </div>
-                            <div className='lg:absolute static lg:right-0 flex justify-center items-center'>
+                            <div className='lg:absolute static left-0 lg:left-10 flex justify-center items-center'>
                                 <Image src={Avatar1}/>
                                 <div className='ml-6 text-3xl lg:text-6xl primary-color font-BarlowCondensedRegular'>Le mot du Président</div>
                             </div>
@@ -132,7 +131,7 @@ export default function HomePage() {
                         <div className='mb-2 lg:mb-8'>
                             <div className='relative'>
                                 <div className='flex'><Image src={Dangi}/></div>
-                                <div className='w-full text-2xl lg:text-7xl text-right font-BarlowCondensedRegular text-white absolute right-0 bottom-1/2 translate-x-0 translate-y-1/2 lg:pr-36 sm:pr-44 pr-10'>Comment adhérer ?</div>
+                                <div className='w-full text-4xl xl:text-7xl text-right font-BarlowCondensedRegular text-white absolute right-0 bottom-1/2 translate-x-0 translate-y-1/2 lg:pr-36 sm:pr-44 pr-10'>Comment adhérer ?</div>
                             </div>
                         </div>
                         <div className='text-center second-color text-lg lg:text-2xl font-BarlowCondensedRegular'>
@@ -143,8 +142,7 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div className='lg:flex block justify-center items-center static lg:relative leading-0'>
-                    <div>
-                        <Image src={Forest}/>
+                    <div className='forest'>
                     </div>
                     <div className='static p-2 lg:absolute'>
                         <div className='flex items-center mb-4'>
