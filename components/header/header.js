@@ -16,7 +16,7 @@ export default function Header() {
     return (
         <>
             {/* xl,lg,sm */}
-            <div className='hidden primary-back sm:flex'>
+            <div className='primary-back sm:flex'>
                 <div className = 'pl-0 pr-44 pt-6 pb-2.5 ml-auto'>
                     <ul className="flex">
                         <li className="mr-12">
