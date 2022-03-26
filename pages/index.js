@@ -27,8 +27,8 @@ export default function HomePage() {
                 </Head>
                 <Header/>
                 <div className="block lg:flex">
-                    <div className='flex w-full'>
-                        <Image src={LeftBack} className="w-full"/>
+                    <div className='flex wd'>
+                        <Image src={LeftBack}/>
                     </div>
                     <div className="relative">
                         <Image src={RightBack}/>
@@ -53,14 +53,17 @@ export default function HomePage() {
                                 <div className='ml-6 text-3xl lg:text-6xl primary-color font-BarlowCondensedRegular'>Le mot du Président</div>
                             </div>
                         </div>
-                        <div className="flex lg:relative w-full mt-3">
+                        <div className="flex static lg:relative w-full mt-3">
                             <div className='flex justify-center items-center z-10'>
                                 <Image src={Avatar2}/>
-                                <div className='ml-6 text-3xl lg:text-6xl primary-color font-BarlowCondensedRegular'>Le mot du Directeur</div>
+                                <div className='h-full items-center flex ml-6 text-3xl lg:text-6xl lg:relative primary-color font-BarlowCondensedRegular'>
+                                    Le mot du Directeur
+                                    <div className='hidden lg:flex absolute top-0 right-0'>
+                                        <Image src={RightQuote}/>
+                                    </div>
+                                </div>
                             </div>
-                            <div className='hidden lg:flex absolute right-12'>
-                                <Image src={RightQuote}/>
-                            </div>
+                            
                         </div>
                     </div>
                     <div className='block lg:grid lg:gap-4 lg:grid-cols-8 lg:py-14 lg:border-b-4 border-gray-400'>

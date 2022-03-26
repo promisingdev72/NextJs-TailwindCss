@@ -13,6 +13,21 @@ import Logo from '../../public/images/logo.png'
 
 
 export default function Header() {
+
+    let onMenu = true;
+    const togooleMenu = () =>{
+        console.log('This is menu btn');
+        if(onMenu == true){
+            document.querySelector('.mobilemenu').classList.add('hidden');
+            onMenu = false;
+        }
+        else{
+            document.querySelector('.mobilemenu').classList.remove('hidden');
+            onMenu = true;
+        }
+        
+    }
+
     return (
         <>
             <div className='hidden primary-back lg:flex'>
@@ -78,8 +93,66 @@ export default function Header() {
                             Faire un don
                         </li>
                     </ul>
-                    <div className="flex text-4xl lg:hidden">
+                    <div className="flex text-4xl lg:hidden cursor-pointer" onClick={togooleMenu}>
                         <IoMenu className="ml-auto primary-color"/>
+                    </div>
+                </div>
+            </div>
+            {/* responsive menu */}
+            <div className="block lg:hidden primary-back mobilemenu">
+                <div className="flex px-6 py-3">
+                    <div className="flex">
+                        <div className="mr-6"><IoMail className="text-white text-2xl"/></div>
+                        <div className="relative flex items-center">
+                            <IoNotifications className="text-white text-2xl"/>
+                            <span className="absolute top-0 right-0 text-white bg-gray-200 rounded-full w-3 h-3 text-xs text-center">2</span>
+                        </div>
+                    </div>
+                    <div className="flex ml-auto">
+                        <div className="flex items-center mr-6">
+                            <IoPersonCircle className="text-white text-3xl"/>
+                        </div>
+                        <div className="min-w-fit flex items-center">
+                            <Image src={Flag}/>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex relative mt-6 px-8">
+                    <input type='text' className="focus: outline-none placeholder:italic rounded-full pl-8 pr-2 h-8 lg-80 w-60 input-back text-white border border-white"></input>
+                    <IoSearch className="text-white text-2xl absolute left-9 top-1"/>
+                </div>
+                <div className="flex mt-6">
+                    <div className="mx-10">
+                        <IoLogoTwitter className="text-white text-2xl"/>
+                    </div>
+                    <div className="mx-10">
+                        <GrFacebookOption className="text-white text-2xl"/>
+                    </div>
+                    <div className="mx-10">
+                        <IoLogoYoutube className="text-white text-2xl"/>
+                    </div>
+                </div>
+                <div className="pl-6 pb-6">
+                    <div className="font-BarlowBold text-white text-xm mt-6">
+                        Qui sommes-nous ?
+                    </div>
+                    <div className="font-BarlowBold text-white text-xm mt-3">
+                        Actualités
+                    </div>
+                    <div className="font-BarlowBold text-white text-xm mt-3">
+                        Notre histoire
+                    </div>
+                    <div className="font-BarlowBold text-white text-xm mt-3">
+                        Les sections
+                    </div>
+                    <div className="font-BarlowBold text-white text-xm mt-3">
+                        Adhérer
+                    </div>
+                    <div className="font-BarlowBold text-white text-xm mt-3">
+                        Contact
+                    </div>
+                    <div className="font-BarlowBold text-white text-xm mt-3">
+                        Faire un don
                     </div>
                 </div>
             </div>
